@@ -2,35 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Calculatrice</title>
+    <title>Fast FOOD SITE</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calc">
-            <input type="text" id="inputext" placeholder="0">
-            <button onclick="ClearDisplay()">c</button>
-            <button onclick="deleteLastCharacter()">del</button>
-            <button onclick="appendValue('%')">%</button>
-            <button onclick="appendValue('/')">/</button>
-            <button onclick="appendValue(7)">7</button>
-            <button onclick="appendValue(8)">8</button>
-            <button onclick="appendValue(9)">9</button>
-            <button onclick="appendValue('*')">*</button>
-            <button onclick="appendValue()">4</button>
-            <button onclick="appendValue(5)">5</button>
-            <button onclick="appendValue(6)">6</button>
-            <button onclick="appendValue('-')">-</button>
-            <button onclick="appendValue(1)">1</button>
-            <button onclick="appendValue(2)">2</button>
-            <button onclick="appendValue(3)">3</button>
-            <button onclick="appendValue('+')">+</button>
-            <button onclick="appendValue('.')">.</button>
-            <button onclick="appendValue('0')">0</button>
-            <button class="equal" onclick="Calculate()">=</button>
-            <script src="calcul.js"></script>
+    <header>
+        <div class="logo">
+            <h1>Fast<span>FOOD</span></h1>
+        </div>
+        <div class="menu_number">
+            <ul class="menu">
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Plats</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <div class="number">
+                <p>1085 350 520</p>
+            </div>
+        </div>
+        <!-- responsive menu -->
+        <div class="menu_toggle"></div>
+    </header>
+
+
+    <!-- home -->
+
+
+    <section class="home">
+        <div class="site_desc">
+            <div class="left">
+                <h1>Commander de la nourriture dans nos restaurants près de chez vous.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero assumenda cupiditate impedit minus repellendus amet laboriosam quibusdam ea officia;</p>
+                <div class="left_button">
+                    <a href="#">Commander Maintenant <img src="images/cart.png"></a>
+                    <a href="#">Apprendre Plus <img src="images/next.png" alt=""></a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/img1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- site info statistics -->
+
+    <section class="info-statistics">
+        <div class="box">
+            <h1>7505+</h1>
+            <p>Restaurants</p>
+        </div>
+        <div class="box">
+            <h1>4871+</h1>
+            <p>Franchisés</p>
+        </div>
+        <div class="box">
+            <h1>5184+</h1>
+            <p>Employés</p>
+        </div>
+        <div class="box">
+            <h1>7544+</h1>
+            <p>Collaborateurs</p>
+        </div>
+
+    </section>
+
+
+    <!-- à propos -->
+
+    <section class="about-us">
+        <div class="left">
+            <img src="images/img4.jpg">
+        </div>
+        <div class="right">
+            <h2>Nous préparons nos mets avec les meilleurs ingrédients du monde.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero, porro doloremque soluta cumque ipsa molestias aliquam aspernatur.</p>
+            <button><a href="#"> Apprendre Plus  <img src="images/next_white.png" alt=""></a> </button>
+
+        </div>
+    </section>
+
+
+    <!-- services -->
+
+    <section class="services">
+        <div class="left">
+            <h2>Nous faissons tout nos mets à la main avec de meilleurs ingrédients</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sit blanditiis exercitationem rerum esse ipsam numquam dolorum autem.</p>
+            <div class="service"><img src="images/check.png"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p></div>
+            <div class="service"><img src="images/check.png"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p></div>
+            <div class="service"><img src="images/check.png"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p></div>
+            <button><a href="#"> Savoir Plus <img src="images/next_white.png"></a></button>
+        </div>
+        <div class="right">
+            <img src="images/img2.jpg" alt="">
+        </div>
+    </section>
+
+
+    <!-- banner -->
+
+    <div class="banner">
+        <h1>Quand l'estomac d'un homme estr plein, <br> peu importe qu'il soit riche ou pauvre.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nobis velit rerum delectus, excepturi </p>
+        <p>aut natus consequuntur assumenda autem dolor recusandae.</p>
+    </div>
+
+    <!-- list meal -->
+
+    <div class="meal">
+        <div class="top">
+            <h1>Explorer nos mets</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam, sit ipsum autem, sunt harum explicabo a cupiditate praesentium iure sequi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam, sit ipsum autem, sunt harum explicabo a cupiditate praesentium iure sequi.</p>
+            <p> Perferendis, voluptate impedit maiores natus consequuntur alias optio sit.</p>
+        </div>
+
+        <div class="bottom">
+            <div class="box">
+                <img src="images/img1.jpg">
+                <h4>Vegétarien Salade Sandwish</h4>
+                <p>Temps:10 - 15 Minutes | Livraison gratuite</p>
+                <span>$20</span>
+                <button><a href="#">Commander <img src="images/cart.png"></a></button>
+            </div>
+            <div class="box">
+                <img src="images/img2.jpg">
+                <h4>Vegétarien Salade Sandwish</h4>
+                <p>Temps:10 - 15 Minutes | Livraison gratuite</p>
+                <span>$30</span>
+                <button><a href="#">Commander <img src="images/cart.png"></a></button>
+            </div>
+            <div class="box">
+                <img src="images/img3.jpg">
+                <h4>Vegétarien Salade Sandwish</h4>
+                <p>Temps:10 - 15 Minutes | Livraison gratuite</p>
+                <span>$70</span>
+                <button><a href="#">Commander <img src="images/cart.png"></a></button>
+            </div>
+
         </div>
     </div>
+
+
+    <footer>
+        <p> Copyright ©2021-2022 | FaizDev </p>
+    </footer>
+
+
+
+    <script>
+        
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu =  document.querySelector('.menu')
+        menu_toggle.onclick = function(){
+             menu_toggle.classList.toggle('active');
+             menu.classList.toggle('responsive');
+        }
+
+    </script>
 </body>
 </html>
